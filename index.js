@@ -211,27 +211,49 @@ lines`) */
 // }
 
 // switch conditions
-const day = "Saturday";
+// const day = "Saturday";
 
-switch (day) {
-    case 'Monday':
-        console.log('Plan course stucture');
-        console.log('Go to coding meetup');
-        break;
-    case "Tuesday":
-        console.log('prepare thery video');
-        break;
-    case "Wednesday":
-    case "Thursday":
-        console.log('write code examples');
-        break;
-    case "Friday":
-        console.log('record videos');
-        break;
-    case "Saturday":
-    case "Sunday":
-        console.log('Enjoy the weekend :D');
-        break;
-    default:
-        console.log("Not a vail day!")
-}
+// switch (day) {
+//     case 'Monday':
+//         console.log('Plan course stucture');
+//         console.log('Go to coding meetup');
+//         break;
+//     case "Tuesday":
+//         console.log('prepare thery video');
+//         break;
+//     case "Wednesday":
+//     case "Thursday":
+//         console.log('write code examples');
+//         break;
+//     case "Friday":
+//         console.log('record videos');
+//         break;
+//     case "Saturday":
+//     case "Sunday":
+//         console.log('Enjoy the weekend :D');
+//         break;
+//     default:
+//         console.log("Not a vail day!")
+// }
+
+// let day = prompt("Enter a day");
+
+// if (day === 'Monday') {
+//     console.log('Plan course stucture');
+//     console.log('Go to coding meetup');
+// } else if (day === 'Tuesday') {
+//     console.log('prepare thery video');
+// } else if (day === 'Wednesday' || day === 'Thursday') {
+//     console.log('write code examples');
+// } else if (day === 'Friday') {
+//     console.log('record videos');
+// } else if (day === 'Saturday' || day === 'Sunday') {
+//     console.log('Enjoy the weekend :D');
+// } else {
+//     console.log("Not a vail day!")
+// }
+
+// Coding Challenge #4
+const bill = 40;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`the bill was ${bill}, the tip was ${tip}, and the total value of bill ${bill + tip}`);
