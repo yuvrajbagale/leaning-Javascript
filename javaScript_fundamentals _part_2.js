@@ -122,35 +122,35 @@ console.log(age1, age2);
 // console.log(ages)
 
 //Basic methods of Array
-const frineds = ['Michael', 'steven', 'Peter']
+// const frineds = ['Michael', 'steven', 'Peter']
 
-//Add element
-const newLenght = frineds.push('jay')
-console.log(frineds);
-console.log(newLenght);
+// //Add element
+// const newLenght = frineds.push('jay')
+// console.log(frineds);
+// console.log(newLenght);
 
-frineds.unshift('jay');
-console.log(frineds);
+// frineds.unshift('jay');
+// console.log(frineds);
 
-// remove elements
-frineds.pop();//last
-const popped = frineds.pop();
-console.log(popped);
-console.log(frineds);
+// // remove elements
+// frineds.pop();//last
+// const popped = frineds.pop();
+// console.log(popped);
+// console.log(frineds);
 
-//remove frist element in the array
-frineds.shift();
-console.log(frineds);
+// //remove frist element in the array
+// frineds.shift();
+// console.log(frineds);
 
-//which position in the array
-console.log(frineds.indexOf('steven'));
+// //which position in the array
+// console.log(frineds.indexOf('steven'));
 
-//ES6 element includes
-frineds.push(23)
-console.log(frineds.includes('steven'));
-console.log(frineds.includes('Bob'));
-console.log(frineds.includes(23));
+// //ES6 element includes
+// frineds.push(23)
+// console.log(frineds.includes('steven'));
+// console.log(frineds.includes('Bob'));
+// console.log(frineds.includes(23));
 
-if (frineds.includes('steven')) {
-    console.log(`frined name is  ${frineds[0]}`)
-}
+// if (frineds.includes('steven')) {
+//     console.log(`frined name is  ${frineds[0]}`)
+// }
