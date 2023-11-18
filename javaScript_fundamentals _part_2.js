@@ -90,3 +90,33 @@ console.log(age1, age2);
 // scorekoalas = calcAverage(23, 34, 27);
 // console.log(scoreDolphins, scorekoalas)
 // checkWinner(scoreDolphins, scorekoalas)
+
+// Array
+const frineds = ['yuvi', 'sid', 'rushi']
+console.log(frineds);
+
+const years = new Array(1994, 1999, 1998);
+console.log(years);
+console.log(frineds[0]);
+console.log(frineds[2]);
+console.log(frineds.length);
+console.log(frineds[frineds.length - 1]);
+frineds[2] = "rushikesh"
+console.log(frineds);
+
+const firstName = 'yuvi';
+const yuvi = [firstName, 'Bagale', 2023 - 1994, 'Programmer', frineds];
+console.log(yuvi);
+console.log(yuvi[4][3])
+
+//Exercise
+
+const calcAge = function (birthYear) {
+    return 2023 - birthYear;
+}
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+let ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])]
+console.log(ages)
