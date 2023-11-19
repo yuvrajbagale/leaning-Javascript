@@ -1,15 +1,15 @@
-// // datatype
-// // number
-// // String
-// // Boolean
-// let javascriptIsFun = true;
-// console.log(javascriptIsFun);
-// console.log(typeof javascriptIsFun);
-// // console.log(typeof 23);
-// // console.log(typeof 'jons');
+// datatype
+// number
+// String
+// Boolean
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
+console.log(typeof javascriptIsFun);
+// console.log(typeof 23);
+// console.log(typeof 'jons');
 
-// javascriptIsFun = 'Yes!';
-// console.log(typeof javascriptIsFun);
+javascriptIsFun = 'Yes!';
+console.log(typeof javascriptIsFun);
 
 // let year;
 // console.log(year)

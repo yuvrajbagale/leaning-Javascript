@@ -152,5 +152,49 @@ console.log(age1, age2);
 // console.log(frineds.includes(23));
 
 // if (frineds.includes('steven')) {
-//     console.log(`frined name is  ${frineds[0]}`)
+//     console.log(`frined name is  ${frineds[0]}`)s
 // }
+
+//Coding challenges 2
+// const calcTip = function (bill) {
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// // console.log(bills, tips)
+
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(bills, tips, total);
+
+const jonas = {
+    fristName: 'jonas',
+    lastName: 'Bagale',
+    age: 2023 - 1994,
+    job: 'Programmer',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+console.log(jonas);
+
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const namekey = 'Name';
+console.log(jonas['first' + namekey]);
+console.log(jonas['last' + namekey]);
+
+// console.log(jonas.'last' + namekey);
+
+const interestedIn = prompt('what do you want to know about Jonas? choose between firstName, lastName, age job, and friends');
+if (jonas[interestedIn]) {
+    console.log(jonas[interestedIn]);
+} else {
+    console.log('Wrong Attemp! use this options firstName, lastName, age job, and friends')
+}
+jonas.location = 'Pune';
+jonas['twitter'] = '@yuvrajbagele';
+console.log(jonas);
+
+//Challennge
+//"Jonas has 3 friends , and his best friend is called Michael"
+console.log(`${jonas.fristName} has ${jonas.friends.length} friends, and his best frined is called as ${jonas.friends[0]}`); 
