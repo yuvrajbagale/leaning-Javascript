@@ -167,34 +167,58 @@ console.log(age1, age2);
 
 // console.log(bills, tips, total);
 
+// const jonas = {
+//     fristName: 'jonas',
+//     lastName: 'Bagale',
+//     age: 2023 - 1994,
+//     job: 'Programmer',
+//     friends: ['Michael', 'Peter', 'Steven']
+// };
+// console.log(jonas);
+
+// console.log(jonas.lastName);
+// console.log(jonas['lastName']);
+
+// const namekey = 'Name';
+// console.log(jonas['first' + namekey]);
+// console.log(jonas['last' + namekey]);
+
+// // console.log(jonas.'last' + namekey);
+
+// const interestedIn = prompt('what do you want to know about Jonas? choose between firstName, lastName, age job, and friends');
+// if (jonas[interestedIn]) {
+//     console.log(jonas[interestedIn]);
+// } else {
+//     console.log('Wrong Attemp! use this options firstName, lastName, age job, and friends')
+// }
+// jonas.location = 'Pune';
+// jonas['twitter'] = '@yuvrajbagele';
+// console.log(jonas);
+
+// //Challennge
+// //"Jonas has 3 friends , and his best friend is called Michael"
+// console.log(`${jonas.fristName} has ${jonas.friends.length} friends, and his best frined is called as ${jonas.friends[0]}`); 
+
 const jonas = {
     fristName: 'jonas',
     lastName: 'Bagale',
-    age: 2023 - 1994,
+    birthYear: 1994,
     job: 'Programmer',
-    friends: ['Michael', 'Peter', 'Steven']
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+    calcAge: function () {
+        this.age = 2023 - this.birthYear;
+        return this.age;
+    },
+    getSummary: function () {
+        return `${this.fristName} is a ${this.calcAge()}-year old ${jonas.job}, and he has ${this.hasDriversLicense} 'a':'no' drivers licenes.`
+    }
 };
-console.log(jonas);
+console.log(jonas.calcAge());
+console.log(jonas.age);
 
-console.log(jonas.lastName);
-console.log(jonas['lastName']);
+//Challenge
+// jonas is 46-year old teachers, and hi has drivers lincesce
 
-const namekey = 'Name';
-console.log(jonas['first' + namekey]);
-console.log(jonas['last' + namekey]);
-
-// console.log(jonas.'last' + namekey);
-
-const interestedIn = prompt('what do you want to know about Jonas? choose between firstName, lastName, age job, and friends');
-if (jonas[interestedIn]) {
-    console.log(jonas[interestedIn]);
-} else {
-    console.log('Wrong Attemp! use this options firstName, lastName, age job, and friends')
-}
-jonas.location = 'Pune';
-jonas['twitter'] = '@yuvrajbagele';
-console.log(jonas);
-
-//Challennge
-//"Jonas has 3 friends , and his best friend is called Michael"
-console.log(`${jonas.fristName} has ${jonas.friends.length} friends, and his best frined is called as ${jonas.friends[0]}`); 
+console.log(jonas.getSummary()); 
