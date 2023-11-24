@@ -257,6 +257,75 @@ console.log(age1, age2);
 
 //for loop
 
-for (let rep = 1; rep <= 10; rep++) {
-    console.log(`lifting weight repetition ${rep}`)
+// for (let rep = 1; rep <= 10; rep = rep + 1) {
+//     console.log(`lifting weight repetition ${rep}`)
+// }
+
+//loop with array
+// const jonas = [
+//     'Jonas',
+//     'schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'steven'],
+//     true
+// ];
+// const types = [];
+// //console.log(jonas[0])
+// //console.log(jonas[1])
+// //...
+// // console.log(jonas[4]);
+// // jonas[5] does not exist
+
+// for (let i = 0; i < jonas.length; i++) {
+//     // reading from jonas array
+//     console.log(jonas[i], typeof jonas[i]);
+//     // filling types arrya
+//     // types[i] = typeof jonas[i]
+//     types.push(typeof jonas[i]);
+// }
+// console.log(types);
+
+// const years = [1991, 1992, 1993, 1994];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2023 - years[i]);
+// }
+// console.log(ages)
+
+
+// // Constinue and Breaks
+
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] !== 'string') continue;
+//     console.log(jonas[i], typeof jonas[i]);
+// }
+// console.log("\n")
+// console.log("-----BREAK WITH NUMBERS-----")
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] === "number") break;
+//     console.log(jonas[i], typeof jonas[i]);
+// }
+
+
+//the while loop
+
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`lifting weights repetition ${rep}`);
+// }
+
+
+let rep = 1;
+while (rep <= 5) {
+    console.log(`WHILE LOOP ${rep}`);
+    rep++
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+    console.log(`you rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end');
 }
