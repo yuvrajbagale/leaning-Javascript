@@ -2,14 +2,14 @@
 // number
 // String
 // Boolean
-let javascriptIsFun = true;
-console.log(javascriptIsFun);
-console.log(typeof javascriptIsFun);
+// let javascriptIsFun = true;
+// console.log(javascriptIsFun);
+// console.log(typeof javascriptIsFun);
 // console.log(typeof 23);
 // console.log(typeof 'jons');
 
-javascriptIsFun = 'Yes!';
-console.log(typeof javascriptIsFun);
+// javascriptIsFun = "Yes!";
+// console.log(typeof javascriptIsFun);
 
 // let year;
 // console.log(year)
@@ -254,6 +254,11 @@ lines`) */
 // }
 
 // Coding Challenge #4
-const bill = 40;
-const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
-console.log(`the bill was ${bill}, the tip was ${tip}, and the total value of bill ${bill + tip}`);
+// const bill = 40;
+// const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+// console.log(
+//   `the bill was ${bill}, the tip was ${tip}, and the total value of bill ${
+//     bill + tip
+//   }`
+// );
+

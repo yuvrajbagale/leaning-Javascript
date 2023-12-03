@@ -1,5 +1,5 @@
 //activating Scrict mode
-'use strict';
+"use strict";
 
 //Function
 // function logger() {
@@ -233,7 +233,6 @@ console.log(age1, age2);
 //     }
 // };
 
-
 // const johan = {
 //     fullName: "johan Smith",
 //     mass: 92,
@@ -294,7 +293,6 @@ console.log(age1, age2);
 // }
 // console.log(ages)
 
-
 // // Constinue and Breaks
 
 // for (let i = 0; i < jonas.length; i++) {
@@ -308,24 +306,74 @@ console.log(age1, age2);
 //     console.log(jonas[i], typeof jonas[i]);
 // }
 
-
 //the while loop
 
 // for (let rep = 1; rep <= 10; rep++) {
 //     console.log(`lifting weights repetition ${rep}`);
 // }
 
+// let rep = 1;
+// while (rep <= 5) {
+//     console.log(`WHILE LOOP ${rep}`);
+//     rep++
+// }
 
-let rep = 1;
-while (rep <= 5) {
-    console.log(`WHILE LOOP ${rep}`);
-    rep++
-}
+// let dice = Math.trunc(Math.random() * 6) + 1;
 
-let dice = Math.trunc(Math.random() * 6) + 1;
+// while (dice !== 6) {
+//     console.log(`you rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice === 6) console.log('Loop is about to end');
+// }
 
-while (dice !== 6) {
-    console.log(`you rolled a ${dice}`);
-    dice = Math.trunc(Math.random() * 6) + 1;
-    if (dice === 6) console.log('Loop is about to end');
-}
+// const calcTip = function (bill) {
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
+
+// for (let i = 0; i < bills.length; i++) {
+//     const tip = calcTip(bills[i]);
+//     tips.push(tip);
+//     totals.push(tip + bills[i]);
+// }
+// console.log(bills, tips, totals);
+
+// const calcAverage = function (arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//     }
+//     return sum / arr.length;
+// }
+// console.log(calcAverage(tips));
+// console.log(calcAverage(totals));
+
+// Node.js and NPM packge managae
+
+// let calcAge=birthYear=>2023-birthYear;
+// console.log(calcAge(1994));
+
+// const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5]; //mager 2 array in one loop useng Array.conct()
+
+// const calctempAmplitude = function (t1, t2) {
+//   const temps = t1.concat(t2); //Mergen two Array.concat
+//   console.log(temps);
+
+//   let max = temps[0];
+//   let min = temps[0];
+
+//   for (let i = 0; i < temps.length; i++) {
+//     const curTemp = temps[i];
+//     if (typeof curTemp !== "number") continue;
+
+//     if (curTemp > max) max = curTemp;
+//     if (curTemp < min) min = curTemp;
+//   }
+//   console.log(`maximum tempreture is ${max} & manimum tempreture is ${min}`);
+//   return max - min;
+// };
+// const amplitude = calctempAmplitude([1, 2, 3], [4, 5, 6]);
+// console.log(amplitude);
