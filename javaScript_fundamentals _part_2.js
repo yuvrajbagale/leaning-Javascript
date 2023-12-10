@@ -378,9 +378,9 @@ console.log(age1, age2);
 // const amplitude = calctempAmplitude([1, 2, 3], [4, 5, 6]);
 // console.log(amplitude);
 
-const test_data = [17, 21, 23];
+// const test_data = [17, 21, 23];
 
-for (let i = 0; i < test_data.length; i++) {
-  if (i == test_data);
-  console.log(`${i}oc in 1 day`);
-}
+// for (let i = 0; i < test_data.length; i++) {
+//   if (i == test_data);
+//   console.log(`${i}oc in 1 day`);
+// }
