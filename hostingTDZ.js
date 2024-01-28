@@ -101,6 +101,28 @@ const restaurant = {
   },
 };
 
+/////////////String//////////////////
+const planeTxt =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima atque accusamus quis blanditiis, nobis voluptatum, explicabo eius enim officiis inventore soluta ut voluptatibus tenetur corrupti dicta odit fugiat ab illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis natus harum ullam nobis quas non ipsam suscipit, voluptatum, illum beatae eos atque dolor ipsa saepe quibusdam sunt quaerat doloremque incidunt?";
+const airline = "TAP Air India";
+const plane = "A320";
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log(plane[3]);
+console.log("yuvraj"[0]);
+console.log(airline.length);
+console.log(plane.length);
+
+console.log(airline.indexOf("a"));
+console.log(airline.lastIndexOf("a"));
+console.log(airline.indexOf("india"));
+
+console.log(airline.slice(4));
+console.log(planeTxt.slice(0, planeTxt.indexOf(" ")));
+console.log(planeTxt.slice(planeTxt.lastIndexOf(" ") + 1));
+console.log(planeTxt.length);
+
 //Set
 // const orderSet = new Set([
 //   "Pasta",
@@ -635,6 +657,8 @@ Let's continue with our football betting app! This time, we have a map with a lo
 4. Loop over the events and log them to the console, marking whether it's in the first half or second half (after 45 min) of the game, like this:
       [FIRST HALF] 17: ⚽️ GOAL
 */
+/**
+
 const gameEvents = new Map([
   [17, "⚽️ GOAL"],
   [36, "🔁 Substitution"],
@@ -649,11 +673,29 @@ const gameEvents = new Map([
   [92, "🔶 Yellow card"],
 ]);
 
-console.log(gameEvents.values());
-const events = new Set(gameEvents.values());
+// console.log(gameEvents.values());
+
+const events = [...new Set(gameEvents.values())];
 console.log(events);
+
+//2
 gameEvents.delete(64);
-console.log(gameEvents);
+// console.log(gameEvents);
+
+//3
 console.log(
   `An event happened, on average, every ${90 / gameEvents.size} minutes`
 );
+
+const time = [...gameEvents.keys()].pop(); //pop use have used to getting last element on arrya
+console.log(time);
+console.log(
+  `An event happened, on average, every ${time / gameEvents.size} minutes`
+);
+
+//4.
+for (const [min, event] of gameEvents) {
+  const half = min <= 45 ? "FIRST" : "SECOND";
+  console.log(`[${half} HALF] ${min}:${event}`);
+}
+ */
