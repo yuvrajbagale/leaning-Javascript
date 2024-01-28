@@ -122,6 +122,8 @@ console.log(airline.slice(4));
 console.log(planeTxt.slice(0, planeTxt.indexOf(" ")));
 console.log(planeTxt.slice(planeTxt.lastIndexOf(" ") + 1));
 console.log(planeTxt.length);
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -1));
 
 //Set
 // const orderSet = new Set([
