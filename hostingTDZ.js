@@ -125,6 +125,35 @@ console.log(planeTxt.length);
 console.log(airline.slice(-2));
 console.log(airline.slice(1, -1));
 
+const checkMiddleSet = function (seat) {
+  const s = seat.slice(-1);
+  if (s === "B" || s === "E") console.log("you got a middl e seat!:D");
+  else console.log("you are luck :)");
+};
+checkMiddleSet("11B");
+checkMiddleSet("11c");
+checkMiddleSet("11E");
+
+console.log(new String("Yuvraj"));
+console.log(typeof new String("Yuvraj"));
+console.log(typeof new String("Yuvraj").slice(1));
+
+//Fix capitalization in name
+const strName = "Well-Come To JavaScript";
+const strConLow = strName.toLowerCase();
+const strConUpToLOw = strConLow[0].toUpperCase() + strConLow.slice(1);
+console.log(strConUpToLOw);
+
+//Comparing emails
+const email = "HelloYUvraj@.io";
+const loginEmail = " HelloYuvraj@.io";
+
+// const lowerEmail = loginEmail.toLowerCase();
+// const trimmedEmail = lowerEmail.toLowerCase().trim();
+// console.log(trimmedEmail);
+
+const normalizedEmail = loginEmail.toLowerCase().trim();
+console.log(normalizedEmail);
 //Set
 // const orderSet = new Set([
 //   "Pasta",
@@ -701,3 +730,17 @@ for (const [min, event] of gameEvents) {
   console.log(`[${half} HALF] ${min}:${event}`);
 }
  */
+
+//Pattern * Creation
+function createStarPatten(numberOfRow) {
+  for (var i = 0; i < numberOfRow; i++) {
+    var startToPrint = "";
+    {
+      for (var j = 0; j < i + 1; j++) {
+        startToPrint += "*";
+      }
+      console.log(startToPrint);
+    }
+  }
+}
+createStarPatten(5);
